@@ -12,7 +12,8 @@
     int numHamburgers = input.nextInt();
 
    String highSchoolName = "BirchWathenLenox";
-   highSchoolName = BirchWathenLenox.substring(0, 1);
+   String initials = highSchoolName.substring(0, 1) + highSchoolName.substring(5, 6) + highSchoolName.substring(11, 12);
+System.out.println(initials);
    double drinkPrice = 1.50;
    double candyPrice = 1.25;
    double hotdogPrice = 2.75;
@@ -35,7 +36,7 @@
      // RECEIPT PRINTOUT SECTION
      System.out.println("**************************************");
      System.out.println("*                                    *");
-     System.out.println("*     High School Snack Bar          *");
+     System.out.println("*       "   + initials + " Snack Bar   *");
      System.out.println("*     Order Number:     " + numOrder + "                           *");
      System.out.println("*     Number of Drinks: " + numDrinks + "  Drink ..........$" + drinkPrice + "          *");                      
        System.out.println("*     Number of Candies: " + numCandies + "  Candies ..........$" + candyPrice + "          *");    
